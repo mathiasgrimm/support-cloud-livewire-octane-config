@@ -96,6 +96,7 @@ return [
             'prefix_indexes' => true,
             'search_path' => 'public',
             'sslmode' => env('DB_SSL_MODE', 'prefer'),
+            'sslrootcert' => env('DB_SSL_ROOTCERT'), // /etc/ssl/certs/ca-certificates.crt
         ],
 
         'sqlsrv' => [
